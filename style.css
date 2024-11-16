@@ -33,7 +33,7 @@ body {
         width: 0;
     }
     to {
-        width: 25ch; /* Adjust to match text length */
+        width: 50ch; /* Adjust to match text length */
     }
 }
 
