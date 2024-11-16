@@ -24,7 +24,8 @@ body {
     overflow: hidden;
     border-right: 2px solid white;
     width: 0;
-    animation: typing 10s steps(40, end), blink 0.7s step-end infinite, fade-out 15s forwards;
+    animation: typing 3s steps(40, end), blink 0.7s step-end infinite;
+    animation-fill-mode: fade-out 15s forwards;
 }
 
 @keyframes typing {
