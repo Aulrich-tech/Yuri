@@ -24,7 +24,7 @@ body {
     overflow: hidden;
     border-right: 2px solid white;
     width: 0;
-    animation: typing 3s steps(40, end), blink 0.7s step-end infinite;
+    animation: typing 3s steps(40, end), blink 0.7s step-end infinite, fade-out 15s forwards;
     animation-fill-mode: forwards;
 }
 
@@ -45,4 +45,11 @@ body {
         border-color: transparent;
     }
 }
-
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
