@@ -1,4 +1,21 @@
-/* Styling for the animated text */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .animated-text {
     font-size: 2rem;
     color: white;
@@ -7,37 +24,25 @@
     overflow: hidden;
     border-right: 2px solid white;
     width: 0;
-    animation: typing 3s steps(40, end), blink 0.7s step-end infinite, fade-out 15s forwards;
-    animation-fill-mode: forwards; /* Keeps text visible after typing ends */
+    animation: typing 3s steps(40, end), blink 0.7s step-end infinite;
+    animation-fill-mode: forwards;
 }
 
-/* Typing effect */
 @keyframes typing {
     from {
         width: 0;
     }
     to {
-        width: 25ch; /* Adjust this to match the length of your text */
+        width: 25ch; /* Adjust to match text length */
     }
 }
 
-/* Cursor blinking effect */
 @keyframes blink {
     from {
         border-color: white;
     }
     to {
         border-color: transparent;
-    }
-}
-
-/* Fade-out effect */
-@keyframes fade-out {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
     }
 }
 
